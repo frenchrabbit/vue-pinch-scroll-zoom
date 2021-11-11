@@ -128,12 +128,35 @@ export default class PinchScrollZoom extends Vue {
     this.checkWithin();
   }
 
+  public setDimensions(width: number, height: number, contentWidth: number, contentHeight: number) {
+      this.width = width;
+      this.height = height;
+      this.contentWidth = contentWidth;
+      this.contentHeight = contentHeight;
+
+      this.axisX = new PinchScrollZoomAxis(
+          this.width,
+          this.originX,
+          this.translateX,
+          this.contentWidth
+      );
+
+      this.axisY = new PinchScrollZoomAxis(
+          this.height,
+          this.originY,
+          this.translateY,
+          this.contentHeight
+      );
+  }
+
   public setData(data: PinchScrollZoomSetData): void {
     this.currentScale = data.scale;
     this.axisX.setPoint(data.translateX);
     this.axisY.setPoint(data.translateY);
     this.axisX.setOrigin(data.originX);
     this.axisY.setOrigin(data.originY);
+
+    this.submitScale(data.scale);
   }
 
   public getEmitData(): PinchScrollZoomEmitData {
