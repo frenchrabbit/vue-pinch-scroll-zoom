@@ -50,7 +50,7 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import PinchScrollZoom, { PinchScrollZoomEmitData } from "@coddicat/vue-pinch-scroll-zoom";
+import PinchScrollZoom, { PinchScrollZoomEmitData } from "@frabbit/vue-pinch-scroll-zoom";
 
 @Component({
   name: "PinchScrollZoomExample",
@@ -86,7 +86,7 @@ export default class PinchScrollZoomExample extends Vue {
         originX: 150,
         originY: 200,
         translateX: -100,
-        translateY: -50        
+        translateY: -50
       });
     }
 }

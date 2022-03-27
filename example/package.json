@@ -1,5 +1,5 @@
 {
-  "name": "@coddicat/vue-pinch-scroll-zoom-example",
+  "name": "@frabbit/vue-pinch-scroll-zoom-example",
   "version": "3.3.1",
   "description": "Vue component that provides content scrolling and zooming using mouse events or two fingers pinch on a mobile devices",
   "author": "Rodion Shlomo Solomonyk",
@@ -12,7 +12,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@coddicat/vue-pinch-scroll-zoom": "^3.3.1",
+    "@frabbit/vue-pinch-scroll-zoom": "^3.3.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
