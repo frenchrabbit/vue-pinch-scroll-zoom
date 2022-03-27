@@ -1,13 +1,13 @@
 {
-  "name": "@coddicat/vue-pinch-scroll-zoom",
-  "version": "3.3.4",
+  "name": "@frabbit/vue-pinch-scroll-zoom",
+  "version": "3.3.6",
   "description": "Vue component that provides content scrolling and zooming using mouse events or two fingers pinch on a mobile devices",
   "author": "Rodion Shlomo Solomonyk",
   "homepage": "https://github.com/coddicat/vue-pinch-scroll-zoom",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coddicat/vue-pinch-scroll-zoom.git"
+    "url": "git://github.com/frenchrabbit/vue-pinch-scroll-zoom.git"
   },
   "scripts": {
     "build": "rollup -c"
@@ -22,20 +22,20 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "vue": "^2.6.11",
-    "@types/lodash": "^4.14.168",
-    "lodash": "^4.17.21",
-    "sass-loader": "^10.1.1",
-    "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^9.1.2",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
+    "@types/lodash": "^4.14.168",
     "@vue/compiler-sfc": "^3.0.7",
+    "lodash": "^4.17.21",
     "rollup": "^2.23.1",
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-typescript2": "^0.27.2",
     "rollup-plugin-vue": "^5.1.6",
+    "sass-loader": "^10.1.1",
     "typescript": "^3.9.7",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.1.2",
     "vue-template-compiler": "^2.6.11"
   }
 }
