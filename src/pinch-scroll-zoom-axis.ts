@@ -53,7 +53,7 @@ export default class PinchScrollZoomAxis {
 
     const overflow = (contentSize - this._size) * scale;
     const border = (this._size - this._size * scale) / 2;
-    
+
     const originFactor = (this._size / 2 - this._origin - (this._size / 2 - this._origin) * scale);
     if (this._point > originFactor - border) {
       this._point = originFactor - border;
@@ -68,5 +68,13 @@ export default class PinchScrollZoomAxis {
 
   public setOrigin(origin: number): void {
     this._origin = origin;
+  }
+
+  public setSize(size: number): void {
+    this._size = size
+  }
+
+  public setContentSize(contentSize: number): void {
+    this._contentSize = contentSize
   }
 };

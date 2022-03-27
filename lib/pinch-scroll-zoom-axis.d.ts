@@ -17,4 +17,6 @@ export default class PinchScrollZoomAxis {
     checkAndResetToWithin(scale: number): void;
     setPoint(point: number): void;
     setOrigin(origin: number): void;
+    setSize(size: number): void;
+    setContentSize(contentSize: number): void;
 }

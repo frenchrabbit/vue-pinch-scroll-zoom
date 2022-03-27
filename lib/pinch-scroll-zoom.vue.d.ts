@@ -39,6 +39,10 @@ export default class PinchScrollZoom extends Vue {
     originXchanged(val: number): void;
     originYchanged(val: number): void;
     withinChanged(): void;
+    widthChanged(val: number): void;
+    heightChanged(val: number): void;
+    contentWidthChanged(val: number): void;
+    contentHeightChanged(val: number): void;
     setData(data: PinchScrollZoomSetData): void;
     getEmitData(): PinchScrollZoomEmitData;
     stopDrag(): void;
